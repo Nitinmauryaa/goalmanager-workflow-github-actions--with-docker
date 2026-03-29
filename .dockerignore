@@ -1,0 +1,30 @@
+# VCS
+.git
+.github
+
+# Local virtual env and Python cache
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pytest_cache/
+
+# Test files are not needed in runtime image
+tests/
+
+# Editor/OS noise
+.vscode/
+.idea/
+.DS_Store
+
+# Build and local artifacts
+*.log
+.coverage
+coverage/
+dist/
+build/
+
+# Optional local compose files
+docker-compose*.yml

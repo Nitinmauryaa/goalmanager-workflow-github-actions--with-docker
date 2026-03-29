@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Goal Manager</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="panel">
+        <h1>Goal Manager</h1>
+        <p class="subtitle">Track small wins with a simple daily planner.</p>
+
+        <form id="goal-form" class="goal-form">
+          <label>
+            Goal title
+            <input id="title" name="title" type="text" placeholder="Read 20 pages" required />
+          </label>
+
+          <label>
+            Description
+            <textarea id="description" name="description" rows="3" placeholder="Optional note..."></textarea>
+          </label>
+
+          <label>
+            Target date
+            <input id="target_date" name="target_date" type="date" />
+          </label>
+
+          <button type="submit">Add Goal</button>
+        </form>
+      </section>
+
+      <section class="panel">
+        <div class="heading-row">
+          <h2>Your Goals</h2>
+          <button id="refresh-btn" type="button" class="secondary">Refresh</button>
+        </div>
+        <p id="status" class="status"></p>
+        <ul id="goal-list" class="goal-list"></ul>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
